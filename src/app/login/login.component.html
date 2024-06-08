@@ -3,15 +3,15 @@
     <form>
       <div class="form-group">
         <label for="exampleInputEmail1">Login</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Login">
+        <input type="email" name="usuario" [(ngModel)]="login" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Login">
       </div>
       <br />
       <div class="form-group">
         <label for="exampleInputPassword1">Senha</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+        <input type="password" name="senha" [(ngModel)]="senha" class="form-control" id="exampleInputPassword1" placeholder="Senha">
       </div>
       <br />
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary" (click)="fazerLogin()">Submit</button>
     </form>
   </section>
 </main>
